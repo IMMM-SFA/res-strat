@@ -220,7 +220,7 @@ program ResStrat
 
 !! BOP
 
-open(99, file='/data/ inputs/reservoirs.txt',action='read')
+open(99, file='data/inputs/reservoirs.txt',action='read')
 
 r_leng = 0
 do
@@ -240,11 +240,11 @@ do rsri = 1,r_leng
 99226 format(9x,f7.2)
 99227 format(9x,f8.2)
 
-	open(12, file='/data/inputs/geometry/'//rsrv//'',action='read') !read geometry data
-	open(13, file='/data/inputs/flow/'//rsrv//'',action='read') !read inflow, river temperature, and outflow
-	open(14, file='/data/inputs/forcing/'//rsrv//'',action='read') !read forcings
-	open(15, file='/data/outputs/stratification/'//rsrv//'',action='write') !open stratification result file
-	open(199, file='/data/outputs/depth/'//energy//rsrv//'',action='write') !open depth result file
+	open(12, file='data/inputs/geometry/'//rsrv//'',action='read') !read geometry data
+	open(13, file='data/inputs/flow/'//rsrv//'',action='read') !read inflow, river temperature, and outflow
+	open(14, file='data/inputs/forcing/'//rsrv//'',action='read') !read forcings
+	open(15, file='data/outputs/stratification/'//rsrv//'',action='write') !open stratification result file
+	open(199, file='data/outputs/depth/'//energy//rsrv//'',action='write') !open depth result file
 
 !	Start main program process
 	fl_ln = 0
@@ -1080,9 +1080,10 @@ do rsri = 1,r_leng
 
 			! 	Avoid Numerical instability for multiple reservoir runs
 					do j = 1,d_n
-            if (isnan(t_z(j)))
-						write(*,*),'check reservoir data'
-						go to 4099
+            if (isnan(t_z(j))) then
+  						write(*,*),'check reservoir data'
+						  go to 4099
+            end if
 					end do
 
 	!***********************************************************************************************************************
