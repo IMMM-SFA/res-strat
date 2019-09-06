@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/206808477.svg)](https://zenodo.org/badge/latestdoi/206808477)
+
+
 # res-strat
 
 A Multi-layer Reservoir Thermal Stratification Module for Earth System Models
