@@ -220,7 +220,7 @@ program ResStrat
 
 !! BOP
 
-open(99, file='/data/inputs/reservoirs.txt',action='read')
+open(99, file='/data/ inputs/reservoirs.txt',action='read')
 
 r_leng = 0
 do
