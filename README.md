@@ -2,7 +2,7 @@
 
 A Multi-layer Reservoir Thermal Stratification Module for Earth System Models
 
-## Getting started with `res-sim`
+## Getting started with `res-strat`
 
 - Clone this repository using `git clone https://github.com/IMMM-SFA/res-strat.git`
 - Navigate into your `res-strat` repository directory
