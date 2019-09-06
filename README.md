@@ -13,13 +13,13 @@ A Multi-layer Reservoir Thermal Stratification Module for Earth System Models
 
 ## Contents
 
-`src/ReservoirStratification.F90` - source code
-`data/inputs/reservoirs.txt` - list of reservoirs to be simulated
-`data/inputs/geometry` - directory containing geometry datasets
-`data/inputs/flow` - directory containing reservoir inflow, inflow temperature, and reservoir outflow
-`data/inputs/forcing` - directory containing NLDAS2 forcing
-`data/outputs/depth` - output directory for reservoir depth
-`data/outputs/stratification` - output directory for stratified reservoir temperature simulation period 2001-2010, daily
+- `src/ReservoirStratification.F90` - source code
+- `data/inputs/reservoirs.txt` - list of reservoirs to be simulated
+- `data/inputs/geometry` - directory containing geometry datasets
+- `data/inputs/flow` - directory containing reservoir inflow, inflow temperature, and reservoir outflow
+- `data/inputs/forcing` - directory containing NLDAS2 forcing
+- `data/outputs/depth` - output directory for reservoir depth
+- `data/outputs/stratification` - output directory for stratified reservoir temperature simulation period 2001-2010, daily
 
 ## Acknowledgement
 
